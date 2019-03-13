@@ -1,0 +1,30 @@
+git branch	          		     --- lista as branchs locais
+git branch -a	   			     --- lista as branchs remotas e locais
+git branch -r                                --- lista as branchs com alias
+git branch -t design origin/design(remota)   --- cria uma branch local copiada da remota
+git remote -v 				     --- lista as branchs remotas
+git branch -d <branch>                       --- deleta a branch
+
+git push -d origin design                    --- deleta a branch remota
+git push origin :<branch>                    --- deleta a branch remota
+
+git checkout <branch>			     --- muda da branch atual para a <branch>
+git ls-files				     --- lista os arquivo que fazem parte da branch
+git add <arquivo ou pasta>		     --- adiciona <arquivo ou pasta> ao index (trackedfile)
+git add .				     --- adiciona todos arquivos e pastas do shell para baixo
+git commit <arquivo> -m "<msg>		     --- commita <arquivo> com a descrição <msg>
+git config --list			     --- lista as configurações
+
+git checkout -b <branch>		     --- cria a <branch> e já troca para ela LOCAL
+git checkout -t origin/design                --- cria branch local igual à remota
+git push origin <branch>		     --- cria a <branch> no repositório remoto
+
+git checkout txt.txt                  --- Volta o txt.html do Working Directory para o do HEAD
+git reset HEAD proposta_1.html        --- tira do index e volta para o Working Directory
+git checkout master txt.txt   --- adiciona ao index SOMENTE o arquivo txt.txt na branch desenvolvimento
+
+
+git remote add [alias_do_repositorio] [uri_do_repositorio] --- criar o repo no git primeiro
+
+git config --global core.editor vi - seta o vi como editor de texto padrão
+git config --global credential.helper cache
